@@ -1,0 +1,1 @@
+﻿had to do this cuz visual studio puts solution folder objects at the core directory instead of making a folder for it

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{83AD23A3-8220-4A94-999F-9D3FC59481F4}</ProjectGuid>
+    <ProjectGuid>{57EB3E59-B03E-465A-A42F-BF26DDDE9E38}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>QuantumCraft_Guardian</RootNamespace>
-    <AssemblyName>QuantumCraft Guardian</AssemblyName>
+    <RootNamespace>QuantumCraft_Versions</RootNamespace>
+    <AssemblyName>QuantumCraft Versions</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,42 +32,18 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
-    <DebugSymbols>true</DebugSymbols>
-    <OutputPath>bin\x64\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <DebugType>full</DebugType>
-    <PlatformTarget>x64</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
-    <ErrorReport>prompt</ErrorReport>
-    <Prefer32Bit>true</Prefer32Bit>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
-    <OutputPath>bin\x64\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <Optimize>true</Optimize>
-    <DebugType>pdbonly</DebugType>
-    <PlatformTarget>x64</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
-    <ErrorReport>prompt</ErrorReport>
-    <Prefer32Bit>true</Prefer32Bit>
-  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <Content Include="v0.1\QuantumCraft Core.dll" />
+    <Content Include="v0.1\QuantumCraft Guardian.exe" />
+    <Content Include="v0.1\QuantumCraft Installer.exe" />
+    <Content Include="v0.1\QuantumCraft UI.exe" />
+    <Content Include="v0.1\Version.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>mkdir "$(SolutionDir)Build\QuantumCraft_Data" &gt;nul 2&gt;&amp;1
-xcopy "$(TargetDir)*.*" "$(SolutionDir)Build" /Y /E</PostBuildEvent>
-  </PropertyGroup>
 </Project>

@@ -1,0 +1,3 @@
+[Latest]
+Quantum=v1.0
+Minecraft=1.0.0
