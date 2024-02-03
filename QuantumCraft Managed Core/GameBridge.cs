@@ -1,12 +1,14 @@
-﻿using System.Diagnostics;
+﻿using QuantumCraft.SDK;
+
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Text;
 
-using static User32;
+using static QuantumCraft.SDK.User32;
 
 namespace QuantumCraft
 {
-    class GameBridge
+    public class GameBridge
     {
         public static Process GetMinecraftProcess()
         {

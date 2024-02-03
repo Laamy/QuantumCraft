@@ -4,6 +4,9 @@ using System.Threading;
 using System.Windows.Forms;
 using System;
 
+// include the quantumcraft managed core
+using QuantumCraft;
+
 class Program
 {
     private static string minecraftProcessName = "Minecraft.Windows";

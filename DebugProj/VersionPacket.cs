@@ -1,6 +1,6 @@
 ﻿namespace QuantumCraft.Packet
 {
-    public class VersionPacket
+    class VersionPacket
     {
         public string Quantum;
         public string[] Minecraft;

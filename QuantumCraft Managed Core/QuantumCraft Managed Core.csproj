@@ -50,12 +50,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataService.cs" />
     <Compile Include="GameBridge.cs" />
     <Compile Include="GameManifest.cs" />
+    <Compile Include="Networking\PacketMaster.cs" />
+    <Compile Include="Networking\QuantumMaster.cs" />
     <Compile Include="Packet\VersionPacket.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SDK\CURSORINFO.cs" />
@@ -63,7 +66,7 @@
     <Compile Include="SDK\User32.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="NewFolder1\" />
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
